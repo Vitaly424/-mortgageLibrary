@@ -1,0 +1,106 @@
+//utilities
+@import "utilities/fonts";
+@import "utilities/mixins";
+@import "utilities/normalize";
+@import "utilities/variables";
+
+html{
+    height: 100%;
+}
+
+/* Default styles */
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    line-height: 1.5;
+    background: url("../../assets/img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Akrobat;
+ 
+    //font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.title{
+    text-align: center;
+    color: $dell;
+    font-size: 46px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+@media (max-width: 996px){
+    .title{
+        font-size: 36px;
+    }   
+}
+
+@media (max-width: 784px){
+    .title{
+        font-size: 24px;
+    }   
+}
+
+.wrapper{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-color: $white;
+}
+
+.container{
+    @include min-max(320px, 100%, 30px);
+}
+
+@media (max-width: 1164px){
+    .container{
+      
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* Bootstrap */
+// @import "../../../node_modules/bootstrap/scss/functions";
+// @import "../../../node_modules/bootstrap/scss/variables";
+// @import "../../../node_modules/bootstrap/scss/mixins";
+// @import "../../../node_modules/bootstrap/scss/grid";
+
+
+/* Blocks */
+@import "./blocks/header";
+@import "./blocks/mortgage";
+@import "./blocks/introduction";
+@import "./blocks/accumulation";
+@import "./blocks/questions";
+@import "./blocks/footer";

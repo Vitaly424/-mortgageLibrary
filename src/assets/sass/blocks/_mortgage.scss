@@ -1,0 +1,61 @@
+.mortgage{
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+.mortgage__row{
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.mortgage__col{
+    max-width: 540px;
+    padding: 40px 50px;
+     
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 5px;
+    background-color: $grayNurse;
+
+    color: $thunder;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+@media (max-width: 1120px){
+    .mortgage{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .mortgage__row{
+        margin-top: 30px;
+    }
+    .mortgage__col{
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    
+}
+ 
+@media (max-width: 996px){
+    .mortgage__col{
+       padding: 20px;
+       font-size: 18px;
+    }
+    .mortgage__row{
+        margin-top: 14px;
+    }
+}
+ 
+
+@media (max-width: 784px){
+    .mortgage__row{
+        margin-top: 14px;
+    }
+}

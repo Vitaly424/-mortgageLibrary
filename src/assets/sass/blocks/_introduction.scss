@@ -1,0 +1,32 @@
+.introduction__desk{
+    max-width: 100%;
+    padding: 20px 14px;
+
+    border-radius: 5px;
+    background-color: $dell;
+}
+
+.introduction__desk-box{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+    color: $white;
+    font-family: Akrobat;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-transform: uppercase;
+
+    span{
+        font-weight: 700;
+        border-bottom: 1px solid $white;
+    }
+}
+
+@media (max-width: 900px){
+    .introduction__desk{
+        padding: 20px 10px;
+    }
+}
